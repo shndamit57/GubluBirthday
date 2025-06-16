@@ -33,15 +33,12 @@
 
     /* for intro*/
     .image-container {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
         position: relative;
         display: inline-block;
         width: 100%;
-    }
-
-    .image-container img.main-image {
-        width: 100%;
-        height: auto;
-        display: block;
     }
 
     .image-container .logo {
