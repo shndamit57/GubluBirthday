@@ -2,89 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday Gublu!</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .image-container img.main-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-container .logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: auto;
+    }
+
+    .image-container .bottom-text {
+      position: absolute;
+      bottom: 10px;
+      color: white;
+      font-size: 2.5vw;
+      padding: 5px;
+      border-radius: 5px;
+      max-width: 40%;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 600px) {
+      .image-container .logo {
+        width: 100px;
+        /* Bigger logo for desktops */
+      }
+
+      .image-container .bottom-text {
+        font-size: 24px;
+        padding: 10px;
+        max-width: 40%;
+        /* Less width for better layout */
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="landing">
-        <h1 class="animated-text">Happy 25th Birthday, Gublu! 🎉</h1>
-        <p class="tagline">To the brilliant civil engineer with a mountain-sized heart ❤️</p>
-    </div>
 
-    <section class="gallery-section">
-        <h2>Your Radiance, Gublu</h2>
-        <p class="section-subtitle">You light up screens and hearts alike. ✨</p>
-        <div class="gallery">
-            <img src="images/image2.jpg" alt="Gublu" />
-            <img src="images/image1.jpg" alt="Gublu" />
-            <img src="images/image3.jpg" alt="Gublu" />
-            <img src="images/image4.webp" alt="Gublu" />
-            <img src="images/image5.webp" alt="Gublu" />
-            <img src="images/image6.webp" alt="Gublu" />
-            <img src="images/image7.jpg" alt="Gublu" />
-        </div>
-    </section>
+  <div class="image-container">
+    <img src="introduce_Bhumik.jpg" alt="Bhumik Logistics Intro" class="main-image">
+    <img src="bhumik_logistics_logo.jpg" alt="Bhumik Logistics Logo" class="logo">
+    <div class="bottom-text">Allow us to introduce Bhumik Logistics, your trusted partner for comprehensive logistics
+      solutions. We are a vibrant company driven by a passionate sales team and experienced operational specialists,
+      offering a full spectrum of services under one roof.</div>
+  </div>
 
-    <section class="interests">
-        <div class="card mountain">
-            <h3>Mountains</h3>
-            <p>Like the peaks you admire, your strength inspires.</p>
-        </div>
-        <div class="card books">
-            <h3>Novels</h3>
-            <p>Each story you read is a world you quietly rule.</p>
-        </div>
-        <div class="card foodie">
-            <h3>Foodie</h3>
-            <p>Every bite is joy — just like your laughter.</p>
-        </div>
-    </section>
-
-    <section class="chat-section">
-        <h2>Our Routine</h2>
-        <p>Every evening between 7–11, your messages light up my day. 📱✨</p>
-    </section>
-
-    <section class="message-card">
-        <h2>A Note for You</h2>
-        <p class="handwritten">
-            Dear Gublu (Vishakha),<br /><br />
-            You’re one of the most genuine and inspiring people I’ve ever known — even without meeting in person. Your
-            kindness, ambition, and the way you dream big… it’s beautiful.<br /><br />
-            Happy 25th Birthday. I’m lucky to know you. 💖
-        </p>
-    </section>
-
-    <section class="fun-facts">
-        <h2>Fun Facts About Gublu 🎉</h2>
-        <ul>
-            <li>🌟 She's a pro at emojis — I’m still catching up! 😅</li>
-            <li>🍳 A fantastic cook — can’t wait to try her legendary <strong>Saoji Chicken</strong>! 🍗🔥</li>
-            <li>👭 Loves a good sisterly fight — keeps the house lively! 😂💥</li>
-        </ul>
-    </section>
-
-    <section class="surprise-section" style="text-align:center; margin: 2rem 0;">
-        <button id="surpriseBtn">Click for a Surprise 🎁</button>
-    </section>
-
-    <!-- Surprise Overlay -->
-    <div id="surpriseOverlay" class="overlay hidden">
-        <div class="overlay-content">
-            <button id="closeOverlay" class="close-btn">&times;</button>
-            <img src="images/image8.jpg" alt="Me with my niece" />
-            <p class="surprise-text">Happy Birthday from Durva, Tuja Cake tine mala bharavla 💖</p>
-        </div>
-    </div>
-
-    <footer>
-        Made with 💙 just for you, by someone who cares deeply.
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
