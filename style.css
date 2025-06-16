@@ -5,6 +5,33 @@
         font-size: 2.2vw;
     }
 
+    /*for common*/
+    .pdf-gallery {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* Adds gap between image containers */
+        /* padding: 0 5vw; */
+        box-sizing: border-box;
+    }
+
+    .pdf-gallery-child {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        /* Box shadow */
+        border-radius: 8px;
+        /* Optional: rounded corners */
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .pdf-gallery-child-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* for intro*/
     .image-container {
         position: relative;
         display: inline-block;
@@ -47,5 +74,16 @@
         .image-container .bottom-text {
             padding: 10px;
             /* Less width for better layout */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .pdf-gallery-child-image {
+            height: 300px;
+            /* fixed height */
+            background-color: #fff;
+            /* optional, to fill background if empty space */
+            width: 100%;
+            /* keep full width */
         }
     }
