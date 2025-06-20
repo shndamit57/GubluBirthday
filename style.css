@@ -63,7 +63,7 @@
     }
 
     .features h2 {
-        font-size: 5vw;
+        font-size: 4vw;
         margin-bottom: 30px;
         color: #ff6600;
     }
@@ -164,9 +164,6 @@
             /* Less width for better layout */
         }
 
-        .features h2 {
-            font-size: 4vw;
-        }
     }
 
     @media (max-width: 480px) {
@@ -177,5 +174,9 @@
             /* optional, to fill background if empty space */
             width: 100%;
             /* keep full width */
+        }
+
+        .experience-image {
+            height: 210px;
         }
     }
