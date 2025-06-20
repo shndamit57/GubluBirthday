@@ -189,25 +189,27 @@
   </script>
 
   <script>
-    // Reveal animations when in viewport
-    const animatedItems = document.querySelectorAll('.feature-item, .pdf-gallery-child, .section-heading, .contact-form');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.animationPlayState = 'running';
+          el.classList.add('visible');
+        } else {
+          el.classList.remove('visible'); // So it re-animates when scrolling again
         }
       });
-    }, {
-      threshold: 0.1
-    });
+    }, { threshold: 0.1 });
 
-    animatedItems.forEach(item => {
-      item.style.animationPlayState = 'paused';
-      observer.observe(item);
+    // Target all items that need animation
+    const elementsToAnimate = document.querySelectorAll('.feature-item, .pdf-gallery-child, .section-heading, .contact-form');
+
+    elementsToAnimate.forEach((el) => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
     });
   </script>
+
 
 
 </body>
