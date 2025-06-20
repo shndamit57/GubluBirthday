@@ -124,6 +124,24 @@
         border-radius: 2px;
     }
 
+    /*for experience*/
+    .experience-image {
+        display: block;
+        width: 100%;
+        /* optional, if you want responsiveness */
+    }
+
+    .caption {
+        background-color: #ff6600;
+        padding: 8px;
+    }
+
+
+    .remove-bottom-radius {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
     /* Responsive layout for wider screens */
     @media (min-width: 768px) {
         .features-grid {
@@ -139,7 +157,7 @@
 
     @media (min-width: 600px) {
         body {
-            font-size: 24px;
+            font-size: 18px;
         }
 
         .image-container .logo {
