@@ -188,6 +188,28 @@
     });
   </script>
 
+  <script>
+    // Reveal animations when in viewport
+    const animatedItems = document.querySelectorAll('.feature-item, .pdf-gallery-child, .section-heading, .contact-form');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    animatedItems.forEach(item => {
+      item.style.animationPlayState = 'paused';
+      observer.observe(item);
+    });
+  </script>
+
+
 </body>
 
 </html>
