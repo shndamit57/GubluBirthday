@@ -136,12 +136,6 @@
         padding: 8px;
     }
 
-
-    .remove-bottom-radius {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
     /* Responsive layout for wider screens */
     @media (min-width: 768px) {
         .features-grid {
